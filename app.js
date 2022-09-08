@@ -45,9 +45,6 @@ app.get("/register", (req, res) => {
 app.get("/login", (req, res) => {
   res.render("login",{title:"Login"});
 });
-app.get("/passwords",(req,res)=>{
-  res.send("From get req");
-})
 app.post("/register", (req, res) => {
   const pwd = (req.body.password);
   const username = req.body.email;

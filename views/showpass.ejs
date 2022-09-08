@@ -16,7 +16,7 @@
       text-align: center;
       font-family: 'BioRhyme', serif;
       font-size:xx-large ;
-      margin-bottom: 2%;
+      margin-bottom: 2.5%!important;
     }
     body{
       background-color: hsl(222.22,47.37%,11.18%);
@@ -38,6 +38,10 @@
       text-align: center;
       padding: 8px;
     }
+    .heading{
+      font-family: 'BioRhyme', serif;
+      color: azure;
+    }
   </style>
 </head>
 <body>
@@ -46,8 +50,8 @@
   <h1 class="animate-pulse">Saved passwords</h1>
 <table>
     <tr>
-      <td>Website</td>
-      <td>Password</td>
+      <td class="heading">Website</td>
+      <td class="heading">Password</td>
     </tr>
     <%for(var i=0;i<websites.length;i++){%>
       <tr>
